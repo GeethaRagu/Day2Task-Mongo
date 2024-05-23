@@ -1,0 +1,77 @@
+[
+  {
+    _id: ObjectId('664f0e26645f2c22daf0d8bd'),
+    user_id: ObjectId('664f0118645f2c22daf0d890'),
+    problemsolved: 52
+  },
+  {
+    _id: ObjectId('664f0e26645f2c22daf0d8be'),
+    user_id: ObjectId('664f0118645f2c22daf0d891'),
+    problemsolved: 25
+  },
+  {
+    _id: ObjectId('664f0e26645f2c22daf0d8bf'),
+    user_id: ObjectId('664f0118645f2c22daf0d892'),
+    problemsolved: 105
+  },
+  {
+    _id: ObjectId('664f0e26645f2c22daf0d8c0'),
+    user_id: ObjectId('664f0118645f2c22daf0d893'),
+    problemsolved: 84
+  },
+  {
+    _id: ObjectId('664f0e26645f2c22daf0d8c1'),
+    user_id: ObjectId('664f0118645f2c22daf0d894'),
+    problemsolved: 37
+  },
+  {
+    _id: ObjectId('664f0e26645f2c22daf0d8c2'),
+    user_id: ObjectId('664f0118645f2c22daf0d895'),
+    problemsolved: 81
+  },
+  {
+    _id: ObjectId('664f0e26645f2c22daf0d8c3'),
+    user_id: ObjectId('664f0118645f2c22daf0d896'),
+    problemsolved: 92
+  },
+  {
+    _id: ObjectId('664f0e26645f2c22daf0d8c4'),
+    user_id: ObjectId('664f0118645f2c22daf0d897'),
+    problemsolved: 27
+  },
+  {
+    _id: ObjectId('664f0e26645f2c22daf0d8c5'),
+    user_id: ObjectId('664f0118645f2c22daf0d898'),
+    problemsolved: 60
+  },
+  {
+    _id: ObjectId('664f0e26645f2c22daf0d8c6'),
+    user_id: ObjectId('664f0118645f2c22daf0d899'),
+    problemsolved: 54
+  },
+  {
+    _id: ObjectId('664f0e26645f2c22daf0d8c7'),
+    user_id: ObjectId('664f0118645f2c22daf0d89a'),
+    problemsolved: 80
+  },
+  {
+    _id: ObjectId('664f0e26645f2c22daf0d8c8'),
+    user_id: ObjectId('664f0118645f2c22daf0d89b'),
+    problemsolved: 45
+  },
+  {
+    _id: ObjectId('664f0e26645f2c22daf0d8c9'),
+    user_id: ObjectId('664f0118645f2c22daf0d89c'),
+    problemsolved: 74
+  },
+  {
+    _id: ObjectId('664f0e26645f2c22daf0d8ca'),
+    user_id: ObjectId('664f0118645f2c22daf0d89d'),
+    problemsolved: 95
+  },
+  {
+    _id: ObjectId('664f0e26645f2c22daf0d8cb'),
+    user_id: ObjectId('664f0118645f2c22daf0d89e'),
+    problemsolved: 68
+  }
+]

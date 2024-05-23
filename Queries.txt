@@ -1,0 +1,788 @@
+1.Find all the topics and tasks which are thought in the month of October
+
+Query:
+
+db.topic.aggregate([
+{
+$lookup:{
+from:'task',
+localField:'topic',
+foreignField:'task',
+as:'topic vs task'
+}
+},
+{
+$match:{
+topicdate:{$regex:'2020-10'}
+}
+},
+  {
+$unwind:'$topic vs task'
+},
+  {
+$project:{
+_id:0,
+topicdate:1,
+task:'$topic vs task.task',
+userid:'$topic vs task.user_id',
+submitted:'$topic vs task.submitted'
+}
+}
+]
+).toArray();
+
+Output:
+
+[
+  {
+    topicdate: '2020-10-07',
+    task: 'Basic Javascript',
+    userid: 1,
+    submitted: 'true'
+  },
+  {
+    topicdate: '2020-10-07',
+    task: 'Basic Javascript',
+    userid: 2,
+    submitted: 'true'
+  },
+  {
+    topicdate: '2020-10-07',
+    task: 'Basic Javascript',
+    userid: 3,
+    submitted: 'false'
+  },
+  {
+    topicdate: '2020-10-07',
+    task: 'Basic Javascript',
+    userid: 4,
+    submitted: 'true'
+  },
+  {
+    topicdate: '2020-10-07',
+    task: 'Basic Javascript',
+    userid: 5,
+    submitted: 'false'
+  },
+  {
+    topicdate: '2020-10-07',
+    task: 'Basic Javascript',
+    userid: 6,
+    submitted: 'true'
+  },
+  {
+    topicdate: '2020-10-07',
+    task: 'Basic Javascript',
+    userid: 7,
+    submitted: 'true'
+  },
+  {
+    topicdate: '2020-10-07',
+    task: 'Basic Javascript',
+    userid: 8,
+    submitted: 'false'
+  },
+  {
+    topicdate: '2020-10-07',
+    task: 'Basic Javascript',
+    userid: 9,
+    submitted: 'true'
+  },
+  {
+    topicdate: '2020-10-07',
+    task: 'Basic Javascript',
+    userid: 10,
+    submitted: 'false'
+  },
+  {
+    topicdate: '2020-10-07',
+    task: 'Basic Javascript',
+    userid: 11,
+    submitted: 'true'
+  },
+  {
+    topicdate: '2020-10-07',
+    task: 'Basic Javascript',
+    userid: 12,
+    submitted: 'true'
+  },
+  {
+    topicdate: '2020-10-07',
+    task: 'Basic Javascript',
+    userid: 13,
+    submitted: 'false'
+  },
+  {
+    topicdate: '2020-10-07',
+    task: 'Basic Javascript',
+    userid: 14,
+    submitted: 'true'
+  },
+  {
+    topicdate: '2020-10-07',
+    task: 'Basic Javascript',
+    userid: 15,
+    submitted: 'false'
+  },
+  {
+    topicdate: '2020-10-10',
+    task: 'DOM',
+    userid: 1,
+    submitted: 'true'
+  },
+  {
+    topicdate: '2020-10-10',
+    task: 'DOM',
+    userid: 2,
+    submitted: 'true'
+  },
+  {
+    topicdate: '2020-10-10',
+    task: 'DOM',
+    userid: 3,
+    submitted: 'false'
+  },
+  {
+    topicdate: '2020-10-10',
+    task: 'DOM',
+    userid: 4,
+    submitted: 'true'
+  },
+  {
+    topicdate: '2020-10-10',
+    task: 'DOM',
+    userid: 5,
+    submitted: 'true'
+  },
+  {
+    topicdate: '2020-10-10',
+    task: 'DOM',
+    userid: 6,
+    submitted: 'true'
+  },
+  {
+    topicdate: '2020-10-10',
+    task: 'DOM',
+    userid: 7,
+    submitted: 'false'
+  },
+  {
+    topicdate: '2020-10-10',
+    task: 'DOM',
+    userid: 8,
+    submitted: 'true'
+  },
+  {
+    topicdate: '2020-10-10',
+    task: 'DOM',
+    userid: 9,
+    submitted: 'true'
+  },
+  {
+    topicdate: '2020-10-10',
+    task: 'DOM',
+    userid: 10,
+    submitted: 'true'
+  },
+  {
+    topicdate: '2020-10-10',
+    task: 'DOM',
+    userid: 11,
+    submitted: 'false'
+  },
+  {
+    topicdate: '2020-10-10',
+    task: 'DOM',
+    userid: 12,
+    submitted: 'true'
+  },
+  {
+    topicdate: '2020-10-10',
+    task: 'DOM',
+    userid: 13,
+    submitted: 'true'
+  },
+  {
+    topicdate: '2020-10-10',
+    task: 'DOM',
+    userid: 14,
+    submitted: 'false'
+  },
+  {
+    topicdate: '2020-10-10',
+    task: 'DOM',
+    userid: 15,
+    submitted: 'true'
+  },
+  {
+    topicdate: '2020-10-17',
+    task: 'React',
+    userid: 1,
+    submitted: 'true'
+  },
+  {
+    topicdate: '2020-10-17',
+    task: 'React',
+    userid: 2,
+    submitted: 'true'
+  },
+  {
+    topicdate: '2020-10-17',
+    task: 'React',
+    userid: 3,
+    submitted: 'true'
+  },
+  {
+    topicdate: '2020-10-17',
+    task: 'React',
+    userid: 4,
+    submitted: 'false'
+  },
+  {
+    topicdate: '2020-10-17',
+    task: 'React',
+    userid: 5,
+    submitted: 'true'
+  },
+  {
+    topicdate: '2020-10-17',
+    task: 'React',
+    userid: 6,
+    submitted: 'true'
+  },
+  {
+    topicdate: '2020-10-17',
+    task: 'React',
+    userid: 7,
+    submitted: 'false'
+  },
+  {
+    topicdate: '2020-10-17',
+    task: 'React',
+    userid: 8,
+    submitted: 'true'
+  },
+  {
+    topicdate: '2020-10-17',
+    task: 'React',
+    userid: 9,
+    submitted: 'true'
+  },
+  {
+    topicdate: '2020-10-17',
+    task: 'React',
+    userid: 10,
+    submitted: 'false'
+  },
+  {
+    topicdate: '2020-10-17',
+    task: 'React',
+    userid: 11,
+    submitted: 'true'
+  },
+  {
+    topicdate: '2020-10-17',
+    task: 'React',
+    userid: 12,
+    submitted: 'false'
+  },
+  {
+    topicdate: '2020-10-17',
+    task: 'React',
+    userid: 13,
+    submitted: 'true'
+  },
+  {
+    topicdate: '2020-10-17',
+    task: 'React',
+    userid: 14,
+    submitted: 'true'
+  },
+  {
+    topicdate: '2020-10-17',
+    task: 'React',
+    userid: 15,
+    submitted: 'false'
+  }
+]
+
+
+2.Find all the company drives which appeared between 15 oct-2020 and 31-oct-2020
+
+
+Query:
+db.companydrives.find({
+  driveDate: {
+    $gte: '2020-10-15',
+    $lte: '2020-10-31'
+  }
+});
+
+
+Output:
+
+{
+  _id: ObjectId('664f18b6645f2c22daf0d8ce'),
+  user_id: ObjectId('664f0118645f2c22daf0d892'),
+  driveDate: '2020-10-15',
+  company: 'Cognizant'
+}
+{
+  _id: ObjectId('664f18b6645f2c22daf0d8d5'),
+  user_id: ObjectId('664f0118645f2c22daf0d898'),
+  driveDate: '2020-10-19',
+  company: 'Cognizant'
+}
+{
+  _id: ObjectId('664f18b6645f2c22daf0d8d6'),
+  user_id: ObjectId('664f0118645f2c22daf0d898'),
+  driveDate: '2020-10-20',
+  company: 'Zoho'
+}
+
+
+3.Find all the company drives and students who are appeared for the placement.
+
+
+Query:
+
+db.companydrives.aggregate([
+  {
+$lookup:{
+from:'users',
+localField:'user_id',
+foreignField:'_id',
+as:'User_Companydrives'
+}
+},
+  {
+$unwind:'$User_Companydrives'
+},
+{
+$project:{
+_id:0,
+driveDate:1,
+company:1,
+username:'$User_Companydrives.username',
+useremail:'$User_Companydrives.useremail',
+userId:'$User_Companydrives.user_id'
+}
+}
+]).toArray();
+
+
+Output:
+
+[
+  {
+    driveDate: '2020-10-03',
+    company: 'Google',
+    username: 'Sobana',
+    useremail: 'sobana@gmail.com',
+    userId: 1
+  },
+  {
+    driveDate: '2020-05-09',
+    company: 'IBM',
+    username: 'Deepika',
+    useremail: 'deepika@gmail.com',
+    userId: 2
+  },
+  {
+    driveDate: '2020-10-15',
+    company: 'Cognizant',
+    username: 'Ajay',
+    useremail: 'ajay@gmail.com',
+    userId: 3
+  },
+  {
+    driveDate: '2020-06-18',
+    company: 'Wipro',
+    username: 'Praveen',
+    useremail: 'praveen@gmail.com',
+    userId: 4
+  },
+  {
+    driveDate: '2020-02-05',
+    company: 'Tata',
+    username: 'John',
+    useremail: 'john@gmail.com',
+    userId: 5
+  },
+  {
+    driveDate: '2020-10-06',
+    company: 'Google',
+    username: 'Ajith',
+    useremail: 'ajith@gmail.com',
+    userId: 6
+  },
+  {
+    driveDate: '2020-11-18',
+    company: 'Zoho',
+    username: 'Ranjith',
+    useremail: 'ranjith@gmail.com',
+    userId: 7
+  },
+  {
+    driveDate: '2020-05-06',
+    company: 'HCL',
+    username: 'Sathya',
+    useremail: 'sathya@gmail.com',
+    userId: 9
+  },
+  {
+    driveDate: '2020-10-01',
+    company: 'Amazon',
+    username: 'Vimal',
+    useremail: 'vimal@gmail.com',
+    userId: 15
+  },
+  {
+    driveDate: '2020-10-19',
+    company: 'Cognizant',
+    username: 'Sathya',
+    useremail: 'sathya@gmail.com',
+    userId: 9
+  },
+  {
+    driveDate: '2020-10-20',
+    company: 'Zoho',
+    username: 'Sathya',
+    useremail: 'sathya@gmail.com',
+    userId: 9
+  },
+  {
+    driveDate: '2020-12-03',
+    company: 'Zoho',
+    username: 'Sobana',
+    useremail: 'sobana@gmail.com',
+    userId: 1
+  },
+  {
+    driveDate: '2020-01-25',
+    company: 'Zoho',
+    username: 'Ajay',
+    useremail: 'ajay@gmail.com',
+    userId: 3
+  },
+  {
+    driveDate: '2020-02-05',
+    company: 'Tata',
+    username: 'Ajith',
+    useremail: 'ajith@gmail.com',
+    userId: 6
+  },
+  {
+    driveDate: '2020-10-10',
+    company: 'Flipkart',
+    username: 'Sathya',
+    useremail: 'sathya@gmail.com',
+    userId: 9
+  },
+  {
+    driveDate: '2020-10-09',
+    company: 'Flipkart',
+    username: 'Vivin',
+    useremail: 'vivin@gmail.com',
+    userId: 8
+  },
+  {
+    driveDate: '2020-10-14',
+    company: 'Amazon',
+    username: 'Ajith',
+    useremail: 'ajith@gmail.com',
+    userId: 6
+  }
+]
+
+4.Find the number of problems solved by the user in codekata
+
+
+Query:
+
+db.codekata.aggregate([
+  {
+$lookup:{
+from:'users',
+localField:'user_id',
+foreignField:'_id',
+as:'User_Problemsolved'
+}
+},
+  {
+$unwind:'$User_Problemsolved'
+},
+{
+$project:
+{
+_id:0,
+username:'$User_Problemsolved.username',
+useremail:'$User_Problemsolved.useremail',
+userid:'$User_Problemsolved.user_id',  
+problemsolved:1
+}
+}
+  ]).toArray();
+
+Output:
+
+[
+  {
+    problemsolved: 52,
+    username: 'Sobana',
+    useremail: 'sobana@gmail.com',
+    userid: 1
+  },
+  {
+    problemsolved: 25,
+    username: 'Deepika',
+    useremail: 'deepika@gmail.com',
+    userid: 2
+  },
+  {
+    problemsolved: 105,
+    username: 'Ajay',
+    useremail: 'ajay@gmail.com',
+    userid: 3
+  },
+  {
+    problemsolved: 84,
+    username: 'Praveen',
+    useremail: 'praveen@gmail.com',
+    userid: 4
+  },
+  {
+    problemsolved: 37,
+    username: 'John',
+    useremail: 'john@gmail.com',
+    userid: 5
+  },
+  {
+    problemsolved: 81,
+    username: 'Ajith',
+    useremail: 'ajith@gmail.com',
+    userid: 6
+  },
+  {
+    problemsolved: 92,
+    username: 'Ranjith',
+    useremail: 'ranjith@gmail.com',
+    userid: 7
+  },
+  {
+    problemsolved: 27,
+    username: 'Vivin',
+    useremail: 'vivin@gmail.com',
+    userid: 8
+  },
+  {
+    problemsolved: 60,
+    username: 'Sathya',
+    useremail: 'sathya@gmail.com',
+    userid: 9
+  },
+  {
+    problemsolved: 54,
+    username: 'Chandran',
+    useremail: 'chandran@gmail.com',
+    userid: 10
+  },
+  {
+    problemsolved: 80,
+    username: 'Akash',
+    useremail: 'akash@gmail.com',
+    userid: 11
+  },
+  {
+    problemsolved: 45,
+    username: 'Nivethitha',
+    useremail: 'nivethitha@gmail.com',
+    userid: 12
+  },
+  {
+    problemsolved: 74,
+    username: 'Priyanka',
+    useremail: 'priyanka@gmail.com',
+    userid: 13
+  },
+  {
+    problemsolved: 95,
+    username: 'Arvind',
+    useremail: 'arvind@gmail.com',
+    userid: 14
+  },
+  {
+    problemsolved: 68,
+    username: 'Vimal',
+    useremail: 'vimal@gmail.com',
+    userid: 15
+  }
+]
+
+
+
+
+5.Find all the mentors with who has the mentee's count more than 15
+
+
+Query:
+
+db.mentors.aggregate([
+  {
+$lookup:{
+from:'users',
+localField:'mentor_id',
+foreignField:'mentorid',
+as:'MenteeCount'
+}
+},
+  {
+$project:{count:{$size:'$MenteeCount'},
+_id:0,
+mentor_name:1,
+mentor_id:1
+}
+},
+{
+$match:{count:{$gt:15}}
+}
+]
+);
+
+
+Output:
+{
+  mentor_id: 1,
+  mentor_name: 'Rupan',
+  count: 17
+}
+
+6.Find the number of users who are absent and task is not submitted  between 15 oct-2020 and 31-oct-2020
+
+Query:
+
+db.attendance.aggregate([
+{
+$lookup:{
+from:'topic',
+localField:'topicid',
+foreignField:'topicid',
+as:'absent'
+}
+},
+{
+ $lookup: {
+ from: 'task',
+ localField: 'userid',
+ foreignField: 'user_id',
+ as: 'task-notsubmitted'
+  }
+},
+{
+$unwind:'$absent'
+},
+{
+$unwind:'$task-notsubmitted'
+},
+{
+$match: {
+attended: 'false',
+'absent.topicdate': {
+$gte: '2020-10-15',
+$lte: '2020-10-31'
+}
+}
+},
+{
+$match: {
+'task-notsubmitted.duedate': {
+$gte: '2020-10-15',
+$lte: '2020-10-31'
+},
+'task-notsubmitted.submitted': 'false'
+}
+},
+{
+$project:{
+_id:0,
+'absent._id':0,
+'task-notsubmitted._id':0
+}
+}
+]).toArray();
+
+
+Output:
+
+[
+  {
+    userid: 4,
+    topicid: 3,
+    attended: 'false',
+    absent: { topicid: 3, topic: 'React', topicdate: '2020-10-17' },
+    'task-notsubmitted': {
+      taskid: 3,
+      topicid: 3,
+      user_id: 4,
+      task: 'React',
+      duedate: '2020-10-28',
+      submitted: 'false'
+    }
+  },
+  {
+    userid: 7,
+    topicid: 3,
+    attended: 'false',
+    absent: { topicid: 3, topic: 'React', topicdate: '2020-10-17' },
+    'task-notsubmitted': {
+      taskid: 2,
+      topicid: 2,
+      user_id: 7,
+      task: 'DOM',
+      duedate: '2020-10-25',
+      submitted: 'false'
+    }
+  },
+  {
+    userid: 7,
+    topicid: 3,
+    attended: 'false',
+    absent: { topicid: 3, topic: 'React', topicdate: '2020-10-17' },
+    'task-notsubmitted': {
+      taskid: 3,
+      topicid: 3,
+      user_id: 7,
+      task: 'React',
+      duedate: '2020-10-28',
+      submitted: 'false'
+    }
+  },
+  {
+    userid: 11,
+    topicid: 3,
+    attended: 'false',
+    absent: { topicid: 3, topic: 'React', topicdate: '2020-10-17' },
+    'task-notsubmitted': {
+      taskid: 2,
+      topicid: 2,
+      user_id: 11,
+      task: 'DOM',
+      duedate: '2020-10-25',
+      submitted: 'false'
+    }
+  },
+  {
+    userid: 13,
+    topicid: 3,
+    attended: 'false',
+    absent: { topicid: 3, topic: 'React', topicdate: '2020-10-17' },
+    'task-notsubmitted': {
+      taskid: 1,
+      topicid: 1,
+      user_id: 13,
+      task: 'Basic Javascript',
+      duedate: '2020-10-15',
+      submitted: 'false'
+    }
+  }
+]

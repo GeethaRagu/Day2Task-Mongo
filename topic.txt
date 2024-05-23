@@ -1,0 +1,32 @@
+[
+  {
+    _id: ObjectId('664f4819645f2c22daf0d8e6'),
+    topicid: 1,
+    topic: 'Basic Javascript',
+    topicdate: '2020-10-07'
+  },
+  {
+    _id: ObjectId('664f4819645f2c22daf0d8e7'),
+    topicid: 2,
+    topic: 'DOM',
+    topicdate: '2020-10-10'
+  },
+  {
+    _id: ObjectId('664f4819645f2c22daf0d8e8'),
+    topicid: 3,
+    topic: 'React',
+    topicdate: '2020-10-17'
+  },
+  {
+    _id: ObjectId('664f4819645f2c22daf0d8e9'),
+    topicid: 4,
+    topic: 'Redux',
+    topicdate: '2020-11-02'
+  },
+  {
+    _id: ObjectId('664f4819645f2c22daf0d8ea'),
+    topicid: 5,
+    topic: 'Mysql',
+    topicdate: '2020-11-05'
+  }
+]

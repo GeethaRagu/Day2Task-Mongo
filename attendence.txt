@@ -1,0 +1,452 @@
+[
+  {
+    _id: ObjectId('664f5f49645f2c22daf0d990'),
+    userid: 1,
+    topicid: 1,
+    attended: 'true'
+  },
+  {
+    _id: ObjectId('664f5f49645f2c22daf0d991'),
+    userid: 2,
+    topicid: 1,
+    attended: 'true'
+  },
+  {
+    _id: ObjectId('664f5f49645f2c22daf0d992'),
+    userid: 3,
+    topicid: 1,
+    attended: 'true'
+  },
+  {
+    _id: ObjectId('664f5f49645f2c22daf0d993'),
+    userid: 4,
+    topicid: 1,
+    attended: 'false'
+  },
+  {
+    _id: ObjectId('664f5f49645f2c22daf0d994'),
+    userid: 5,
+    topicid: 1,
+    attended: 'true'
+  },
+  {
+    _id: ObjectId('664f5f49645f2c22daf0d995'),
+    userid: 6,
+    topicid: 1,
+    attended: 'true'
+  },
+  {
+    _id: ObjectId('664f5f49645f2c22daf0d996'),
+    userid: 7,
+    topicid: 1,
+    attended: 'true'
+  },
+  {
+    _id: ObjectId('664f5f49645f2c22daf0d997'),
+    userid: 8,
+    topicid: 1,
+    attended: 'true'
+  },
+  {
+    _id: ObjectId('664f5f49645f2c22daf0d998'),
+    userid: 9,
+    topicid: 1,
+    attended: 'true'
+  },
+  {
+    _id: ObjectId('664f5f49645f2c22daf0d999'),
+    userid: 10,
+    topicid: 1,
+    attended: 'true'
+  },
+  {
+    _id: ObjectId('664f5f49645f2c22daf0d99a'),
+    userid: 11,
+    topicid: 1,
+    attended: 'true'
+  },
+  {
+    _id: ObjectId('664f5f49645f2c22daf0d99b'),
+    userid: 12,
+    topicid: 1,
+    attended: 'true'
+  },
+  {
+    _id: ObjectId('664f5f49645f2c22daf0d99c'),
+    userid: 13,
+    topicid: 1,
+    attended: 'false'
+  },
+  {
+    _id: ObjectId('664f5f49645f2c22daf0d99d'),
+    userid: 14,
+    topicid: 1,
+    attended: 'true'
+  },
+  {
+    _id: ObjectId('664f5f49645f2c22daf0d99e'),
+    userid: 15,
+    topicid: 1,
+    attended: 'true'
+  },
+  {
+    _id: ObjectId('664f5f49645f2c22daf0d99f'),
+    userid: 1,
+    topicid: 2,
+    attended: 'true'
+  },
+  {
+    _id: ObjectId('664f5f49645f2c22daf0d9a0'),
+    userid: 2,
+    topicid: 2,
+    attended: 'false'
+  },
+  {
+    _id: ObjectId('664f5f49645f2c22daf0d9a1'),
+    userid: 3,
+    topicid: 2,
+    attended: 'true'
+  },
+  {
+    _id: ObjectId('664f5f49645f2c22daf0d9a2'),
+    userid: 4,
+    topicid: 2,
+    attended: 'false'
+  },
+  {
+    _id: ObjectId('664f5f49645f2c22daf0d9a3'),
+    userid: 5,
+    topicid: 2,
+    attended: 'true'
+  },
+  {
+    _id: ObjectId('664f5f49645f2c22daf0d9a4'),
+    userid: 6,
+    topicid: 2,
+    attended: 'false'
+  },
+  {
+    _id: ObjectId('664f5f49645f2c22daf0d9a5'),
+    userid: 7,
+    topicid: 2,
+    attended: 'false'
+  },
+  {
+    _id: ObjectId('664f5f49645f2c22daf0d9a6'),
+    userid: 8,
+    topicid: 2,
+    attended: 'true'
+  },
+  {
+    _id: ObjectId('664f5f49645f2c22daf0d9a7'),
+    userid: 9,
+    topicid: 2,
+    attended: 'true'
+  },
+  {
+    _id: ObjectId('664f5f49645f2c22daf0d9a8'),
+    userid: 10,
+    topicid: 2,
+    attended: 'true'
+  },
+  {
+    _id: ObjectId('664f5f49645f2c22daf0d9a9'),
+    userid: 11,
+    topicid: 2,
+    attended: 'false'
+  },
+  {
+    _id: ObjectId('664f5f49645f2c22daf0d9aa'),
+    userid: 12,
+    topicid: 2,
+    attended: 'true'
+  },
+  {
+    _id: ObjectId('664f5f49645f2c22daf0d9ab'),
+    userid: 13,
+    topicid: 2,
+    attended: 'false'
+  },
+  {
+    _id: ObjectId('664f5f49645f2c22daf0d9ac'),
+    userid: 14,
+    topicid: 2,
+    attended: 'true'
+  },
+  {
+    _id: ObjectId('664f5f49645f2c22daf0d9ad'),
+    userid: 15,
+    topicid: 2,
+    attended: 'true'
+  },
+  {
+    _id: ObjectId('664f5f49645f2c22daf0d9ae'),
+    userid: 1,
+    topicid: 3,
+    attended: 'true'
+  },
+  {
+    _id: ObjectId('664f5f49645f2c22daf0d9af'),
+    userid: 2,
+    topicid: 3,
+    attended: 'false'
+  },
+  {
+    _id: ObjectId('664f5f49645f2c22daf0d9b0'),
+    userid: 3,
+    topicid: 3,
+    attended: 'true'
+  },
+  {
+    _id: ObjectId('664f5f49645f2c22daf0d9b1'),
+    userid: 4,
+    topicid: 3,
+    attended: 'false'
+  },
+  {
+    _id: ObjectId('664f5f49645f2c22daf0d9b2'),
+    userid: 5,
+    topicid: 3,
+    attended: 'true'
+  },
+  {
+    _id: ObjectId('664f5f49645f2c22daf0d9b3'),
+    userid: 6,
+    topicid: 3,
+    attended: 'false'
+  },
+  {
+    _id: ObjectId('664f5f49645f2c22daf0d9b4'),
+    userid: 7,
+    topicid: 3,
+    attended: 'false'
+  },
+  {
+    _id: ObjectId('664f5f49645f2c22daf0d9b5'),
+    userid: 8,
+    topicid: 3,
+    attended: 'true'
+  },
+  {
+    _id: ObjectId('664f5f49645f2c22daf0d9b6'),
+    userid: 9,
+    topicid: 3,
+    attended: 'true'
+  },
+  {
+    _id: ObjectId('664f5f49645f2c22daf0d9b7'),
+    userid: 10,
+    topicid: 3,
+    attended: 'true'
+  },
+  {
+    _id: ObjectId('664f5f49645f2c22daf0d9b8'),
+    userid: 11,
+    topicid: 3,
+    attended: 'false'
+  },
+  {
+    _id: ObjectId('664f5f49645f2c22daf0d9b9'),
+    userid: 12,
+    topicid: 3,
+    attended: 'true'
+  },
+  {
+    _id: ObjectId('664f5f49645f2c22daf0d9ba'),
+    userid: 13,
+    topicid: 3,
+    attended: 'false'
+  },
+  {
+    _id: ObjectId('664f5f49645f2c22daf0d9bb'),
+    userid: 14,
+    topicid: 3,
+    attended: 'true'
+  },
+  {
+    _id: ObjectId('664f5f49645f2c22daf0d9bc'),
+    userid: 15,
+    topicid: 3,
+    attended: 'true'
+  },
+  {
+    _id: ObjectId('664f5f49645f2c22daf0d9bd'),
+    userid: 1,
+    topicid: 4,
+    attended: 'true'
+  },
+  {
+    _id: ObjectId('664f5f49645f2c22daf0d9be'),
+    userid: 2,
+    topicid: 4,
+    attended: 'true'
+  },
+  {
+    _id: ObjectId('664f5f49645f2c22daf0d9bf'),
+    userid: 3,
+    topicid: 4,
+    attended: 'true'
+  },
+  {
+    _id: ObjectId('664f5f49645f2c22daf0d9c0'),
+    userid: 4,
+    topicid: 4,
+    attended: 'true'
+  },
+  {
+    _id: ObjectId('664f5f49645f2c22daf0d9c1'),
+    userid: 5,
+    topicid: 4,
+    attended: 'true'
+  },
+  {
+    _id: ObjectId('664f5f49645f2c22daf0d9c2'),
+    userid: 6,
+    topicid: 4,
+    attended: 'true'
+  },
+  {
+    _id: ObjectId('664f5f49645f2c22daf0d9c3'),
+    userid: 7,
+    topicid: 4,
+    attended: 'true'
+  },
+  {
+    _id: ObjectId('664f5f49645f2c22daf0d9c4'),
+    userid: 8,
+    topicid: 4,
+    attended: 'true'
+  },
+  {
+    _id: ObjectId('664f5f49645f2c22daf0d9c5'),
+    userid: 9,
+    topicid: 4,
+    attended: 'true'
+  },
+  {
+    _id: ObjectId('664f5f49645f2c22daf0d9c6'),
+    userid: 10,
+    topicid: 4,
+    attended: 'true'
+  },
+  {
+    _id: ObjectId('664f5f49645f2c22daf0d9c7'),
+    userid: 11,
+    topicid: 4,
+    attended: 'false'
+  },
+  {
+    _id: ObjectId('664f5f49645f2c22daf0d9c8'),
+    userid: 12,
+    topicid: 4,
+    attended: 'true'
+  },
+  {
+    _id: ObjectId('664f5f49645f2c22daf0d9c9'),
+    userid: 13,
+    topicid: 4,
+    attended: 'true'
+  },
+  {
+    _id: ObjectId('664f5f49645f2c22daf0d9ca'),
+    userid: 14,
+    topicid: 4,
+    attended: 'true'
+  },
+  {
+    _id: ObjectId('664f5f49645f2c22daf0d9cb'),
+    userid: 15,
+    topicid: 4,
+    attended: 'true'
+  },
+  {
+    _id: ObjectId('664f5f49645f2c22daf0d9cc'),
+    userid: 1,
+    topicid: 5,
+    attended: 'true'
+  },
+  {
+    _id: ObjectId('664f5f49645f2c22daf0d9cd'),
+    userid: 2,
+    topicid: 5,
+    attended: 'true'
+  },
+  {
+    _id: ObjectId('664f5f49645f2c22daf0d9ce'),
+    userid: 3,
+    topicid: 5,
+    attended: 'true'
+  },
+  {
+    _id: ObjectId('664f5f49645f2c22daf0d9cf'),
+    userid: 4,
+    topicid: 5,
+    attended: 'true'
+  },
+  {
+    _id: ObjectId('664f5f49645f2c22daf0d9d0'),
+    userid: 5,
+    topicid: 5,
+    attended: 'true'
+  },
+  {
+    _id: ObjectId('664f5f49645f2c22daf0d9d1'),
+    userid: 6,
+    topicid: 5,
+    attended: 'true'
+  },
+  {
+    _id: ObjectId('664f5f49645f2c22daf0d9d2'),
+    userid: 7,
+    topicid: 5,
+    attended: 'true'
+  },
+  {
+    _id: ObjectId('664f5f49645f2c22daf0d9d3'),
+    userid: 8,
+    topicid: 5,
+    attended: 'true'
+  },
+  {
+    _id: ObjectId('664f5f49645f2c22daf0d9d4'),
+    userid: 9,
+    topicid: 5,
+    attended: 'true'
+  },
+  {
+    _id: ObjectId('664f5f49645f2c22daf0d9d5'),
+    userid: 10,
+    topicid: 5,
+    attended: 'false'
+  },
+  {
+    _id: ObjectId('664f5f49645f2c22daf0d9d6'),
+    userid: 11,
+    topicid: 5,
+    attended: 'true'
+  },
+  {
+    _id: ObjectId('664f5f49645f2c22daf0d9d7'),
+    userid: 12,
+    topicid: 5,
+    attended: 'true'
+  },
+  {
+    _id: ObjectId('664f5f49645f2c22daf0d9d8'),
+    userid: 13,
+    topicid: 5,
+    attended: 'true'
+  },
+  {
+    _id: ObjectId('664f5f49645f2c22daf0d9d9'),
+    userid: 14,
+    topicid: 5,
+    attended: 'false'
+  },
+  {
+    _id: ObjectId('664f5f49645f2c22daf0d9da'),
+    userid: 15,
+    topicid: 5,
+    attended: 'true'
+  }
+]
